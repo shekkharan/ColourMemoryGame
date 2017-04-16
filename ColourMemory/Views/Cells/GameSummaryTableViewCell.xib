@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Volkswagen-Bold.otf">
+            <string>Volkswagen-Bold</string>
+            <string>Volkswagen-Bold</string>
+        </mutableArray>
+        <mutableArray key="Volkswagen-Medium.otf">
+            <string>Volkswagen-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="GameSummaryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-5V-2jd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2n-1S-YgZ" userLabel="Round Name View">
+                                <rect key="frame" x="0.0" y="1" width="123" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh9-rc-Hoh">
+                                        <rect key="frame" x="11" y="11" width="100" height="21"/>
+                                        <fontDescription key="fontDescription" name="Volkswagen-Medium" family="Volkswagen-Medium" pointSize="19"/>
+                                        <color key="textColor" red="0.070588235289999995" green="0.58431372550000005" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="i8a-sB-TmD"/>
+                                    <constraint firstAttribute="height" constant="43" id="oGZ-Ym-0Oj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-as-ePZ" userLabel="Points View">
+                                <rect key="frame" x="259" y="0.0" width="61" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4o-aG-D10">
+                                        <rect key="frame" x="11" y="4" width="38" height="36"/>
+                                        <fontDescription key="fontDescription" name="Volkswagen-Bold" family="Volkswagen-Bold" pointSize="21"/>
+                                        <color key="textColor" red="0.12802552969789471" green="0.85782832253947372" blue="0.13763706143684212" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="4xU-JO-bda"/>
+                                    <constraint firstAttribute="height" constant="44" id="wUl-Gb-Udv"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN8-ax-GpJ">
+                                <rect key="frame" x="173" y="13" width="19" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="570-Yj-3JM"/>
+                                    <constraint firstAttribute="height" constant="21" id="nnB-Nt-Mfv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Volkswagen-Bold" family="Volkswagen-Bold" pointSize="17"/>
+                                <color key="textColor" red="0.070588235289999995" green="0.58431372550000005" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wc-ag-QqN" customClass="UIImageView">
+                                <rect key="frame" x="146" y="7" width="26" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="Rvj-nc-rfW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ph-Hx-YP9" customClass="UIImageView">
+                                <rect key="frame" x="194" y="7" width="26" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="8xp-GY-XmC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.79798353040000003" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oaW-as-ePZ" firstAttribute="leading" secondItem="0ph-Hx-YP9" secondAttribute="trailing" constant="39" id="Ckg-iB-zoC"/>
+                            <constraint firstItem="oaW-as-ePZ" firstAttribute="top" secondItem="uMg-5V-2jd" secondAttribute="top" id="FI1-TB-1zV"/>
+                            <constraint firstItem="NN8-ax-GpJ" firstAttribute="top" secondItem="uMg-5V-2jd" secondAttribute="top" constant="13" id="MrW-Wg-h6C"/>
+                            <constraint firstItem="8wc-ag-QqN" firstAttribute="top" secondItem="uMg-5V-2jd" secondAttribute="top" constant="7" id="QAF-Gz-U7x"/>
+                            <constraint firstItem="e2n-1S-YgZ" firstAttribute="leading" secondItem="uMg-5V-2jd" secondAttribute="leading" id="Rs2-NB-cds"/>
+                            <constraint firstAttribute="bottom" secondItem="e2n-1S-YgZ" secondAttribute="bottom" id="VlB-O7-KUA"/>
+                            <constraint firstAttribute="bottom" secondItem="0ph-Hx-YP9" secondAttribute="bottom" constant="6" id="WNi-tj-gss"/>
+                            <constraint firstItem="0ph-Hx-YP9" firstAttribute="top" secondItem="uMg-5V-2jd" secondAttribute="top" constant="7" id="bLd-WL-Q4e"/>
+                            <constraint firstItem="0ph-Hx-YP9" firstAttribute="leading" secondItem="NN8-ax-GpJ" secondAttribute="trailing" constant="2" id="bsQ-O8-xF1"/>
+                            <constraint firstAttribute="trailing" secondItem="oaW-as-ePZ" secondAttribute="trailing" id="g4l-bP-4pX"/>
+                            <constraint firstAttribute="bottom" secondItem="oaW-as-ePZ" secondAttribute="bottom" id="hsB-mL-7Im"/>
+                            <constraint firstAttribute="bottom" secondItem="NN8-ax-GpJ" secondAttribute="bottom" constant="10" id="j0F-pB-j8z"/>
+                            <constraint firstAttribute="height" constant="44" id="kSo-wY-jTr"/>
+                            <constraint firstItem="NN8-ax-GpJ" firstAttribute="leading" secondItem="8wc-ag-QqN" secondAttribute="trailing" constant="1" id="kpL-Gg-SX8"/>
+                            <constraint firstAttribute="bottom" secondItem="8wc-ag-QqN" secondAttribute="bottom" constant="6" id="njx-G8-zSe"/>
+                            <constraint firstItem="e2n-1S-YgZ" firstAttribute="top" secondItem="uMg-5V-2jd" secondAttribute="top" constant="1" id="tUz-VO-63O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="uMg-5V-2jd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Vq-Ga-ns2"/>
+                    <constraint firstItem="uMg-5V-2jd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3iZ-ZU-scB"/>
+                    <constraint firstAttribute="trailing" secondItem="uMg-5V-2jd" secondAttribute="trailing" id="dhy-eb-Yhd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="containerView" destination="uMg-5V-2jd" id="LdN-Ef-Lpf"/>
+                <outlet property="firstCardView" destination="8wc-ag-QqN" id="0tt-h4-ErN"/>
+                <outlet property="pointsLabel" destination="v4o-aG-D10" id="yfd-X5-9Um"/>
+                <outlet property="roundNameLabel" destination="Yh9-rc-Hoh" id="3Mz-Pw-3pW"/>
+                <outlet property="secondCardView" destination="0ph-Hx-YP9" id="J8F-Le-nbe"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="117"/>
+        </tableViewCell>
+    </objects>
+</document>

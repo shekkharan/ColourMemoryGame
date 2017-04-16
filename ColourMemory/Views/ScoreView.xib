@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Volkswagen-Bold.otf">
+            <string>Volkswagen-Bold</string>
+        </mutableArray>
+        <mutableArray key="Volkswagen-Light.otf">
+            <string>Volkswagen-Light</string>
+        </mutableArray>
+        <mutableArray key="Volkswagen-Medium.otf">
+            <string>Volkswagen-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScoreView">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpy-zW-j6q">
+                    <rect key="frame" x="44" y="4" width="42" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="BTu-Id-lbC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Volkswagen-Medium" family="Volkswagen-Medium" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU6-TZ-oIX" userLabel="Score Value">
+                    <rect key="frame" x="44" y="26" width="42" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="RJ1-g5-Wrc"/>
+                        <constraint firstAttribute="width" constant="42" id="xMw-md-Deg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Volkswagen-Bold" family="Volkswagen-Bold" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeh-Yq-cIO">
+                    <rect key="frame" x="104" y="28" width="24" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bkh-JS-DQr"/>
+                        <constraint firstAttribute="width" constant="24" id="d7w-WA-ZBa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Volkswagen-Light" family="Volkswagen-Light" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uU6-TZ-oIX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="44" id="6TH-YH-NzJ"/>
+                <constraint firstItem="Fpy-zW-j6q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="M5N-JK-l3n"/>
+                <constraint firstAttribute="trailing" secondItem="Fpy-zW-j6q" secondAttribute="trailing" constant="44" id="PQm-W9-F0L"/>
+                <constraint firstAttribute="trailing" secondItem="uU6-TZ-oIX" secondAttribute="trailing" constant="44" id="QJx-Rl-0OO"/>
+                <constraint firstItem="uU6-TZ-oIX" firstAttribute="top" secondItem="Fpy-zW-j6q" secondAttribute="bottom" constant="3" id="Qi5-JY-iec"/>
+                <constraint firstItem="Yeh-Yq-cIO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28" id="Yem-9f-Jeo"/>
+                <constraint firstAttribute="bottom" secondItem="uU6-TZ-oIX" secondAttribute="bottom" constant="6" id="pBK-So-f2K"/>
+                <constraint firstItem="Fpy-zW-j6q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="44" id="pjH-P7-MYZ"/>
+                <constraint firstAttribute="trailing" secondItem="Yeh-Yq-cIO" secondAttribute="trailing" constant="2" id="wIr-8A-6BO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="numberOfMatchesLabel" destination="Yeh-Yq-cIO" id="TQW-7k-9ky"/>
+                <outlet property="scoreLabel" destination="uU6-TZ-oIX" id="J8t-a5-yYC"/>
+            </connections>
+            <point key="canvasLocation" x="107" y="-267.5"/>
+        </view>
+    </objects>
+</document>
